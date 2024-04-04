@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern calligraphy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db80d25201.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body .col {
+            animation: fadeInRight 2s ease;
+            animation: fadeInUp 2s ease;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 2;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 2;
+                transform: translateX(0px);
+            }
+        }
+
+        .pagination a {
+            background-color: transparent;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        nav {
+            background-color: rgb(145, 105, 42);
+        }
+
+        footer {
+            background-color: rgb(145, 105, 42);
+            color: white;
+            padding: 40px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer i {
+            padding: 5px;
+        }
+
+        footer p:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: rgb(124, 63, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fs-5 fixed-top">
+        <div class="container-fluid">
+            <h1 style="color: rgb(0, 0, 0); font-size: 50px; font-weight: bold;">CALLIGRAPHY</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Calligraphy</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.html"
+                                style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html" style="color: white;">Aboutus</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="gallery/" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="gallery1.html">Arabic Calligraphy</a></li>
+                                <li><a class="dropdown-item" href="gallery2.html">Traditional Calligraphy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="gallery3.html">Modern Calligraphy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html" style="color: white;">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color: white;">ContactUs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-aqua w-100" style="height: 780px;padding-top: 35px; margin-top: 60px;">
+        <div class="container" id="gallery5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic12.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Modern calligraphy</h5>
+                            <p class="card-text lh-sm">pointed pen styling is done simply by a
+                                nib with a pointed tip.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic11.jpg" class="card-img" height="815px">
+                        <div class="card-img-overlay fw-bold" style="color:rgb(252, 252, 252);">
+                            <h5 class="card-title fs-4">Greetings</h5>
+                            <p class="card-text lh-sm">elevate your greetings with style and make a lasting impression
+                                with your hand-written invitations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="bg-grey w-100" style="height: 600px;">
+        <div class="container" id="gallery6">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic7.jpg" class="card-img">
+                        <div class="card-img-overlay" style="color: rgb(72, 209, 204);">
+                            <h5 class="card-title fs-4">Brush pen</h5>
+                            <p class="card-text lh-sm">calligraphy that's made with pens that have tapered tips and a
+                                consistent ink flow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic4.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:white;">
+                            <h5 class="card-title fs-4">Hand-lettering</h5>
+                            <p class="card-text lh-sm">a creative way to draw letters by hand which allows for freedom.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic6.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:rgb(0, 0, 0);">
+                            <h5 class="card-title fs-4">School board</h5>
+                            <p class="card-text lh-sm">your note for farewell is your unique writining impression.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="bg-offwhite w-100" style="height: 600px;">
+        <div class="container" id="gallery7">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic9.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:rgb(0, 0, 0);">
+                            <h5 class="card-title fs-4">Western calligraphy</h5>
+                            <p class="card-text lh-sm">it is the desciption of calligraphy as it's
+                                done in the western world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic13.jpg" class="card-img">
+                        <div class="card-img-overlay" style="color: rgb(170, 155, 137);">
+                            <h5 class="card-title fs-4">Spencerian</h5>
+                            <p class="card-text lh-sm">a calligraphy style dating from the 19th in the united states.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic38.jpg" class="card-img" height="620px">
+                        <div class="card-img-overlay" style="color: rgb(241, 12, 5);">
+                            <h5 class="card-title fs-4">Malayalam</h5>
+                            <p class="card-text lh-sm">The calligraphic work comes from their
+                                stories, movies, poems, plays, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="bg-lightpeach w-100" style="height: 760px;">
+        <div class="container" id="gallery8">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic33.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:rgba(0, 0, 0, 0.887);">
+                            <h5 class="card-title fs-4">Eastern calligraphy</h5>
+                            <p class="card-text lh-sm">countries like japan,china and korea have
+                                long-standing calligraphy traditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic39.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Digitals</h5>
+                            <p class="card-text lh-sm">stylish
+                                calligraphic fonts serve as a brilliant marketing strategy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="bg-peach w-100" style="height: 500px;">
+        <div class="container" id="gallery9">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic1.jpg" class="card-img" height="600px">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Notebooks</h5>
+                            <p class="card-text lh-sm">Beautifully hand-written
+                                notebooks soothens our mind, in this busy age of computers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic16.jpg" class="card-img" height="600px">
+                        <div class="card-img-overlay" style="color: rgb(0, 0, 0);">
+                            <h5 class="card-title fs-4">Faux Calligraphy</h5>
+                            <p class="card-text lh-sm">created with any standard instrument like chalk,pen or marker.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic40.jpg" class="card-img" height="600px">
+                        <div class="card-img-overlay" style="color:rgb(211, 0, 0);">
+                            <h5 class="card-title fs-4">Cards</h5>
+                            <p class="card-text lh-sm">Handmade cards wish a lifetime of love,laughs and happiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="w-100" style="height: 50px;">
+        <nav aria-label="Page navigation" style="background: transparent;">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" style="color: black" href="gallery1.html">1</a></li>
+                <li class="page-item"><a class="page-link" style="color: black" href="gallery2.html">2</a></li>
+                <li class="page-item"><a class="page-link" style="color: black" href="gallery3.html">3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <footer>
+        CopyRight &copy; 2024 [Scratchy Nib]. All rights reserved.
+        <i class="fa-solid fa-envelope fa-xl" style="float: left; margin-top: 5px;"></i>
+        <p style="float: left;">Scratchynib@gmail.com</p>
+        <i class="fa-brands fa-x-twitter fa-2xl" style="color: #0b0e14; float: right;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #1d1b1b; float: right;"></i>
+        <i class="fa-brands fa-facebook fa-2xl" style="color: #000000; float: right;"></i>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

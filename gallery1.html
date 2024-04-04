@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic calligraphy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db80d25201.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        body .col {
+            animation: fadeInRight 2s ease;
+            animation: fadeInUp 2s ease;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 2;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 2;
+                transform: translateX(0px);
+            }
+        }
+
+        .pagination a {
+            background-color: transparent;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: rgb(124, 63, 63);
+        }
+
+        nav {
+            background-color: rgb(145, 105, 42);
+        }
+
+        footer {
+            background-color: rgb(145, 105, 42);
+            color: white;
+            padding: 40px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer i {
+            padding: 5px;
+        }
+
+        footer p:hover {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fs-5 fixed-top">
+        <div class="container-fluid">
+            <h1 style="color: rgb(0, 0, 0); font-size: 50px; font-weight: bold;">CALLIGRAPHY</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Calligraphy</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html" style="color: white;">Aboutus</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="gallery/" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="gallery1.html">Arabic Calligraphy</a></li>
+                                <li><a class="dropdown-item" href="gallery2.html">Traditional Calligraphy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="gallery3.html">Modern Calligraphy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html" style="color: white;">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color: white;">ContactUs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-aqua w-100" style="height: 100px; margin-top: 80px;">
+        <div class="container" id="gallery">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center fs-1 fw-normal lh-lg">Gallery</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-grey w-100" style="height: 800px;">
+        <div class="container" id="gallery1">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic36.jpg" class="card-img" height="800px">
+                        <div class="card-img-overlay" style="color: rgb(8, 8, 7);">
+                            <h5 class="card-title fs-4">Preservation</h5>
+                            <p class="card-text lh-sm ">Muslims have been preserving their form of art over the
+                                centuries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic18.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:rgb(72, 209, 204);">
+                            <h5 class="card-title fs-4">Islamic Khatt</h5>
+                            <p class="card-text lh-sm ">The artistic practice of hand-writing using arabic alphabets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+    <div class="bg-offwhite w-100" style="height: 600px;">
+        <div class="container" id="gallery2">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic22.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:rgb(72, 209, 204);">
+                            <h5 class="card-title fs-4">Love</h5>
+                            <p class="card-text lh-sm ">Calligraphy is also an emotional expression of a believer
+                                towards his Lord.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic23.jpg" class="card-img" height="580px">
+                        <div class="card-img-overlay " style="color: rgb(170, 155, 137);">
+                            <h5 class="card-title fs-4">Arabic calligraphy</h5>
+                            <p class="card-text lh-sm ">has a rich history in the islamic world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic19.jpg" class="card-img" height="580px">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Scripture</h5>
+                            <p class="card-text lh-sm ">
+                                Ottoman calligraphers elevated the styles to new peaks of beauty and elegance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+    <div class="bg-lightpeach w-100" style="height: 600px;">
+        <div class="container" id="gallery3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic14.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:aliceblue;">
+                            <h5 class="card-title fs-4">Religion</h5>
+                            <p class="card-text lh-sm">writings which help foster a spiritual
+                                atmosphere for worshipers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic24.jpg" class="card-img">
+                        <div class="card-img-overlay" style="color:black">
+                            <h5 class="card-title fs-4">Architecture</h5>
+                            <p class="card-text lh-sm ">calligraphy on walls is a
+                                significant form of visual art in islamic architecture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic29.jpg" class="card-img">
+                        <div class="card-img-overlay " style="color:aliceblue;">
+                            <h5 class="card-title fs-4">Royal</h5>
+                            <p class="card-text lh-sm ">royality has always been adorned by
+                                detailed lettering.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <div class="bg-peach w-100" style="height: 420px;">
+        <div class="container" id="gallery4">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic26.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:aliceblue;">
+                            <h5 class="card-title fs-4">Culture</h5>
+                            <p class="card-text lh-sm">Calligraphy inscriptions are everywhere
+                                in the muslim world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic10.jpg" class="card-img">
+                        <div class="card-img-overlay" style="color: rgb(170, 155, 137);">
+                            <h5 class="card-title fs-4">Muslim identity</h5>
+                            <p class="card-text lh-sm ">The writing brings forth a
+                                great type of decorative art.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="bg-peach w-100" style="height: 90px;">
+        <nav aria-label="Page navigation" style="background: transparent;">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" style="color:rgb(0, 0, 0)" href="gallery1.html">1</a></li>
+                <li class="page-item"><a class="page-link" style="color:rgb(0, 0, 0);" href="gallery2.html">2</a></li>
+                <li class="page-item"><a class="page-link" style="color:rgb(0, 0, 0);" href="gallery3.html">3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        CopyRight &copy; 2024 [Aman Sultan]. All rights reserved.
+        <i class="fa-solid fa-envelope fa-xl" style="float: left; margin-top: 5px;"></i>
+        <p style="float: left;">Scratchynib@gmail.com</p>
+        <i class="fa-brands fa-x-twitter fa-2xl" style="color: #0b0e14; float: right;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #1d1b1b; float: right;"></i>
+        <i class="fa-brands fa-facebook fa-2xl" style="color: #000000; float: right;"></i>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

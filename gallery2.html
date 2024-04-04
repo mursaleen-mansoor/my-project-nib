@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional calligraphy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db80d25201.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body .col {
+            animation: fadeInRight 2s ease;
+            animation: fadeInUp 2s ease;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 2;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 2;
+                transform: translateX(0px);
+            }
+        }
+
+        .pagination a {
+            background: transparent;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        nav {
+            background-color: rgb(145, 105, 42);
+        }
+
+        footer {
+            background-color: rgb(145, 105, 42);
+            color: white;
+            padding: 40px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer i {
+            padding: 5px;
+        }
+
+        footer p:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: rgb(124, 63, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fs-5 fixed-top">
+        <div class="container-fluid">
+            <h1 style="color: rgb(0, 0, 0); font-size: 50px; font-weight: bold;">CALLIGRAPHY</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Calligraphy</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.html"
+                                style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html" style="color: white;">Aboutus</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="gallery/" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="gallery1.html">Arabic Calligraphy</a></li>
+                                <li><a class="dropdown-item" href="gallery2.html">Traditional Calligraphy</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="gallery3.html">Modern Calligraphy</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html" style="color: white;">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color: white;">ContactUs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="bg-aqua w-100" style="height: 820px;padding-top: 35px; margin-top: 60px;">
+        <div class="container" id="gallery5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic27.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:rgb(0, 0, 0);">
+                            <h5 class="card-title fs-4">Traditional</h5>
+                            <p class="card-text lh-sm">Chinese calligraphy is the stylized
+                                artistic writing of chinese characters and holds a vital
+                                role in their traditional history.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic2.jpg" class="card-img">
+                        <div class="card-img-overlay" style="color: rgb(0, 0, 0);">
+                            <h5 class="card-title fs-4">Copperplate script</h5>
+                            <p class="card-text lh-sm">calligraphy was a dominant writing style during 18th century.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+    <div class="bg-grey w-100" style="height: 600px;">
+        <div class="container" id="gallery6">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic28.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Ancient</h5>
+                            <p class="card-text lh-sm">the written form of chinese
+                                that unites the languages spoken in china.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic25.jpg" class="card-img">
+                        <div class="card-img-overlay" style="color: rgb(170, 155, 137);">
+                            <h5 class="card-title fs-4">Roman capitals</h5>
+                            <p class="card-text lh-sm">an ancient roman form of writing and the
+                                basis for modern capital letters. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic21.jpg" class="card-img">
+                        <div class="card-img-overlay" style="color:rgb(72, 209, 204);">
+                            <h5 class="card-title fs-4">Wall art</h5>
+                            <p class="card-text lh-sm">An islamic art that is supposed
+                                to serve, honour and respect the Quran.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+    <div class="bg-offwhite w-100" style="height: 600px;">
+        <div class="container" id="gallery7">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic20.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Advanced</h5>
+                            <p class="card-text lh-sm">Leaders of advanced eras have taken
+                                calligraphy to the next level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic36.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Preservation</h5>
+                            <p class="card-text lh-sm">Muslims have been preserving their form of
+                                art over the centuries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic23.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Arabic calligraphy</h5>
+                            <p class="card-text lh-sm"> has a rich history in the islamic world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <div class="bg-lightpeach w-100" style="height: 900px;">
+        <div class="container" id="gallery8">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic37.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Beyond Borders</h5>
+                            <p class="card-text lh-sm">Local market is a
+                                wonderful handmade font and art collection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic30.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:black;">
+                            <h5 class="card-title fs-4">Gold</h5>
+                            <p class="card-text lh-sm">lettering which serves as a constant reminder
+                                of the divine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div class="bg-peach w-100" style="height: 600px;">
+        <div class="container" id="gallery9">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic35.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:white;">
+                            <h5 class="card-title fs-4">Carving</h5>
+                            <p class="card-text lh-sm">There is an essense of chinese
+                                national culture in their carved calligraphic work.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic8.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:aliceblue;">
+                            <h5 class="card-title fs-4">Iconic</h5>
+                            <p class="card-text lh-sm">engravement of characters with
+                                balance, rythym and harmony creates a masterpiece.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="border: 0px;">
+                        <img src="pic31.jpg" class="card-img">
+                        <div class="card-img-overlay fw-bold" style="color:rgb(171, 15, 13);">
+                            <h5 class="card-title fs-4">Sign-boards</h5>
+                            <p class="card-text lh-sm"> This calligraphic style shaped
+                                the city's visual culture for decades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="w-100" style="height: 50px;">
+        <nav aria-label="Page navigation" style="background: transparent;">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" style="color: black;" href="gallery1.html">1</a></li>
+                <li class="page-item"><a class="page-link" style="color: black;" href="gallery2.html">2</a></li>
+                <li class="page-item"><a class="page-link" style="color: black;" href="gallery3.html">3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+    <footer>
+        CopyRight &copy; 2024 [Sratchy Nib]. All rights reserved.
+        <i class="fa-solid fa-envelope fa-xl" style="float: left; margin-top: 5px;"></i>
+        <p style="float: left;">Scratchynib@gmail.com</p>
+        <i class="fa-brands fa-x-twitter fa-2xl" style="color: #0b0e14; float: right;"></i>
+        <i class="fa-brands fa-instagram fa-2xl" style="color: #1d1b1b; float: right;"></i>
+        <i class="fa-brands fa-facebook fa-2xl" style="color: #000000; float: right;"></i>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
